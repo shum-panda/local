@@ -1,12 +1,12 @@
 # Notice
 
-Required Notice: Copyright 2026 shum-panda (https://github.com/shum-panda/vega-lite)
+Required Notice: Copyright 2026 shum-panda (https://github.com/shum-panda/local)
 
 Vega Lite – the app, its texts and graphics and this website – is licensed under the
 [PolyForm Noncommercial License 1.0.0](LICENSE.md): you may use, copy and share it for any noncommercial purpose –
 personal use, study, hobby projects, charities, schools – as long as you pass on the license and the notice above.
 Selling it, putting it behind a paywall or ads, or using it in a business is not allowed without written
-permission. Ask via [GitHub issues](https://github.com/shum-panda/vega-lite/issues) if you'd like to use it commercially.
+permission. Ask via [GitHub issues](https://github.com/shum-panda/local/issues) if you'd like to use it commercially.
 
 Not covered by this license, because they aren't Vega's:
 

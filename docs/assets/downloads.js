@@ -23,5 +23,12 @@ window.VEGA_DOWNLOADS = {
       size: "57 MB",
       needs: "Android 7.0 or newer",
     },
+    "lite-linux": {
+      label: "Linux",
+      file: "VegaLite-linux-x86_64.tar.gz",              // packaging/linux (built on GitHub: .github/workflows/linux.yml)
+      url: "https://github.com/shum-panda/local/releases/latest/download/VegaLite-linux-x86_64.tar.gz",
+      size: "19 MB",
+      needs: "64-bit Linux with glibc 2.31 or newer (Ubuntu 20.04+, Debian 11+, Fedora 32+)",
+    },
   },
 };

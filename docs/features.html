@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Features · Vega Lite</title>
-<meta name="description" content="What Vega Lite does: Locals (the card market of your local game store), your collection, market watch, phone and PC sync, privacy – and what is coming.">
+<meta name="description" content="What Vega Lite does: Locals (the card market of your local game store), your collection, decks and the deck coach, market watch, phone and PC sync, privacy – and what is coming.">
 <meta name="theme-color" content="#15120C">
 <meta name="referrer" content="no-referrer">
 <meta property="og:title" content="Features · Vega">
-<meta property="og:description" content="What Vega Lite does: Locals (the card market of your local game store), your collection, market watch, phone and PC sync, privacy – and what is coming.">
+<meta property="og:description" content="What Vega Lite does: Locals (the card market of your local game store), your collection, decks and the deck coach, market watch, phone and PC sync, privacy – and what is coming.">
 <meta property="og:image" content="assets/img/vega-512.png">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/img/vega-32.png">
 <link rel="apple-touch-icon" href="assets/img/vega-192.png">
@@ -33,7 +33,7 @@
     <p class="lede rv">Your collection, the cards you look for and the players of your local game store, put together: what you have, what
       it is worth, what to buy and who to trade with. More is on the way.</p>
     <nav class="toc rv" aria-label="On this page">
-      <a href="#locals">Locals</a><a href="#collection">Collection</a><a href="#market">Market watch</a>
+      <a href="#locals">Locals</a><a href="#collection">Collection</a><a href="#decks">Decks &amp; coach</a><a href="#market">Market watch</a>
       <a href="#sync">Phone ↔ PC</a><a href="#privacy">Privacy</a><a href="#soon">Coming soon</a>
     </nav>
   </div>
@@ -113,6 +113,28 @@
   </div>
 </section>
 
+<section class="feature" id="decks" aria-labelledby="decks-h">
+  <div class="wrap feature-grid">
+    <div class="feature-text">
+      <p class="kicker rv">Build</p>
+      <h2 id="decks-h" class="rv">Decks &amp; coach</h2>
+      <p class="lede rv">Your collection is shared by all your decks: a deck only misses a card if it plays more copies than you own.</p>
+      <ul class="rv">
+        <li><b>Build with the cards in front of you:</b> pick a leader, add cards of its colors by their pictures, or paste a list (<code>4xOP12-034</code> per line). The rules are checked: 50 cards, 4 copies, colors.</li>
+        <li><b>Shopping list:</b> what's missing, priced with shipping. One click watches all missing cards.</li>
+        <li><b>Deck coach (optional):</b> how the deck is played, written for your level; a game plan against one leader; swaps to try. With your own Anthropic API key on the PC, or as a prompt you copy into any AI chat.</li>
+        <li><b>Your art:</b> choose for each card which printing the deck shows.</li>
+      </ul>
+    </div>
+    <div class="feature-media">
+      <div class="duo zoom">
+        <div class="device laptop"><span class="title">My decks · Shopping</span><div class="screen"><img loading="lazy" src="assets/shots/d-deck-shop.webp" width="1600" height="1108" alt="A deck's shopping list with prices and shipping"></div></div>
+        <div class="device phone para" data-speed="0.12"><div class="screen"><img loading="lazy" src="assets/shots/p-deck.webp" width="780" height="1688" alt="A deck on the phone"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="feature" id="market" aria-labelledby="market-h">
   <div class="wrap feature-grid">
     <div class="feature-text">
@@ -140,7 +162,7 @@
     <div class="feature-text">
       <p class="kicker rv">Two devices, one Vega</p>
       <h2 id="sync-h" class="rv">Phone ↔ PC sync</h2>
-      <p class="lede rv">Your collection, market watch and a few settings stay the same on the Android app and the PC.</p>
+      <p class="lede rv">Your collection, decks, market watch and a few settings stay the same on the Android app and the PC.</p>
       <ul class="rv">
         <li><b>Each device works on its own,</b> offline too. The phone swaps changes with the PC when it can reach it: every 5 minutes and on <i>Sync now</i>.</li>
         <li><b>Pair once:</b> turn on <i>Phone sync</i> on the PC, then <i>Find my PC</i> on the phone and enter the short code, or scan the QR code.</li>
@@ -163,7 +185,7 @@
   <div class="wrap">
     <p class="kicker rv">Privacy</p>
     <h2 id="priv-h" class="rv">Local first. No tracking.</h2>
-    <p class="lede rv">Everything you enter (collection, watch list, settings) is stored only on your devices, and synced only between
+    <p class="lede rv">Everything you enter (collection, decks, watch list, settings) is stored only on your devices, and synced only between
       your own phone and PC if you pair them. At a local you join, the other players see what you offer and look for.</p>
     <div class="pgrid">
       <div class="pitem rv"><b>No sign-up to start</b><span>Vega starts empty and fetches public card data for you. Only Locals asks for a name.</span></div>
@@ -200,27 +222,6 @@
       <div class="duo zoom">
         <div class="device laptop"><span class="title">Meta · Matchups</span><div class="screen"><img loading="lazy" src="assets/shots/d-meta-heat.webp" width="1600" height="1108" alt="The matchup heatmap: each leader's win rate against the others"></div></div>
         <div class="device phone para" data-speed="0.12"><div class="screen"><img loading="lazy" src="assets/shots/p-play.webp" width="780" height="1688" alt="The play board on the phone"></div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="feature" id="decks" aria-labelledby="decks-h">
-  <div class="wrap feature-grid">
-    <div class="feature-text">
-      <p class="kicker rv">Coming soon</p>
-      <h2 id="decks-h" class="rv">Deck builder</h2>
-      <p class="lede rv">Your collection is shared by all your decks: a deck only misses a card if it plays more copies than you own.</p>
-      <ul class="rv">
-        <li><b>Deck rules checked:</b> 50 cards, 4 copies, colors; cost curve and counters; your list compared with recent tournament lists.</li>
-        <li><b>Shopping list:</b> what's missing, priced with shipping and checked against a budget per deck. One click watches all missing cards.</li>
-        <li><b>Paste or import:</b> <code>4xOP12-034</code> per line, OPTCGSim decks, or copy a tournament list straight in.</li>
-      </ul>
-    </div>
-    <div class="feature-media">
-      <div class="duo zoom">
-        <div class="device laptop"><span class="title">My decks · Shopping</span><div class="screen"><img loading="lazy" src="assets/shots/d-deck-shop.webp" width="1600" height="1108" alt="A deck's shopping list with prices and shipping"></div></div>
-        <div class="device phone para" data-speed="0.12"><div class="screen"><img loading="lazy" src="assets/shots/p-deck.webp" width="780" height="1688" alt="A deck on the phone"></div></div>
       </div>
     </div>
   </div>
@@ -284,7 +285,7 @@
     <div class="foot-grid">
       <div>
         <a class="brand" href="index.html" aria-label="Vega home"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><defs><linearGradient id="chrome" gradientUnits="userSpaceOnUse" x1="12.1" y1="3" x2="19.9" y2="29"><stop offset="0" stop-color="#fff"/><stop offset=".4" stop-color="#d6deea"/><stop offset=".5" stop-color="#242830"/><stop offset=".55" stop-color="#808896"/><stop offset=".8" stop-color="#e2e6ee"/><stop offset="1" stop-color="#fff"/></linearGradient><linearGradient id="chromeSpark" gradientUnits="userSpaceOnUse" x1="24.09" y1="3.72" x2="26.19" y2="10.72"><stop offset="0" stop-color="#fff"/><stop offset=".4" stop-color="#d6deea"/><stop offset=".5" stop-color="#242830"/><stop offset=".55" stop-color="#808896"/><stop offset=".8" stop-color="#e2e6ee"/><stop offset="1" stop-color="#fff"/></linearGradient></defs><path d="M16 3 L18.57 13.43 L29 16 L18.57 18.57 L16 29 L13.43 18.57 L3 16 L13.43 13.43Z" fill="url(#chrome)" stroke="#5c687a" stroke-width=".4" stroke-linejoin="round"/><path d="M16 16 L16 3 L13.43 13.43Z M16 16 L3 16 L13.43 13.43Z" fill="#fff" fill-opacity="0.46"/><path d="M16 16 L16 3 L18.57 13.43Z M16 16 L3 16 L13.43 18.57Z" fill="#fff" fill-opacity="0.19"/><path d="M16 16 L29 16 L18.57 18.57Z M16 16 L16 29 L18.57 18.57Z" fill="#14161c" fill-opacity="0.46"/><path d="M16 16 L29 16 L18.57 13.43Z M16 16 L16 29 L13.43 18.57Z" fill="#14161c" fill-opacity="0.19"/><path d="M25.14 3.72 L25.98 6.37 L28.64 7.22 L25.98 8.06 L25.14 10.72 L24.29 8.06 L21.64 7.22 L24.29 6.37Z" fill="url(#chromeSpark)"/><path d="M25.14 7.22 L25.14 3.72 L24.29 6.37Z M25.14 7.22 L21.64 7.22 L24.29 6.37Z" fill="#fff" fill-opacity="0.46"/><path d="M25.14 7.22 L25.14 3.72 L25.98 6.37Z M25.14 7.22 L21.64 7.22 L24.29 8.06Z" fill="#fff" fill-opacity="0.19"/><path d="M25.14 7.22 L28.64 7.22 L25.98 8.06Z M25.14 7.22 L25.14 10.72 L25.98 8.06Z" fill="#14161c" fill-opacity="0.46"/><path d="M25.14 7.22 L28.64 7.22 L25.98 6.37Z M25.14 7.22 L25.14 10.72 L24.29 8.06Z" fill="#14161c" fill-opacity="0.19"/></svg><span>Vega</span></a>
-        <p>Vega Lite: a free, unofficial app for the ONE PIECE Card Game at your local game store. Windows and Android.
+        <p>Vega Lite: a free, unofficial app for the ONE PIECE Card Game at your local game store. Windows, Android and Linux.
         Version <span data-version>0.1.0</span>.</p>
       </div>
       <div>

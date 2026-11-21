@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vega Lite · free analyzer for the ONE PIECE Card Game</title>
+<meta name="description" content="Vega Lite is a free, local, unofficial analyzer for the ONE PIECE Card Game: meta, decks, collection, market prices, pack pulls, your games and local trades. Windows and Android, no account, no tracking.">
+<meta name="theme-color" content="#15120C">
+<meta name="referrer" content="no-referrer">
+<meta property="og:title" content="Vega Lite · free analyzer for the ONE PIECE Card Game">
+<meta property="og:description" content="Vega Lite is a free, local, unofficial analyzer for the ONE PIECE Card Game: meta, decks, collection, market prices, pack pulls, your games and local trades. Windows and Android, no account, no tracking.">
+<meta property="og:image" content="assets/img/vega-512.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/vega-32.png">
+<link rel="apple-touch-icon" href="assets/img/vega-192.png">
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<link rel="stylesheet" href="assets/style.css?v=6">
+<script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Vega home"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><defs><linearGradient id="chrome" gradientUnits="userSpaceOnUse" x1="12.1" y1="3" x2="19.9" y2="29"><stop offset="0" stop-color="#fff"/><stop offset=".4" stop-color="#d6deea"/><stop offset=".5" stop-color="#242830"/><stop offset=".55" stop-color="#808896"/><stop offset=".8" stop-color="#e2e6ee"/><stop offset="1" stop-color="#fff"/></linearGradient><linearGradient id="chromeSpark" gradientUnits="userSpaceOnUse" x1="24.09" y1="3.72" x2="26.19" y2="10.72"><stop offset="0" stop-color="#fff"/><stop offset=".4" stop-color="#d6deea"/><stop offset=".5" stop-color="#242830"/><stop offset=".55" stop-color="#808896"/><stop offset=".8" stop-color="#e2e6ee"/><stop offset="1" stop-color="#fff"/></linearGradient></defs><path d="M16 3 L18.57 13.43 L29 16 L18.57 18.57 L16 29 L13.43 18.57 L3 16 L13.43 13.43Z" fill="url(#chrome)" stroke="#5c687a" stroke-width=".4" stroke-linejoin="round"/><path d="M16 16 L16 3 L13.43 13.43Z M16 16 L3 16 L13.43 13.43Z" fill="#fff" fill-opacity="0.46"/><path d="M16 16 L16 3 L18.57 13.43Z M16 16 L3 16 L13.43 18.57Z" fill="#fff" fill-opacity="0.19"/><path d="M16 16 L29 16 L18.57 18.57Z M16 16 L16 29 L18.57 18.57Z" fill="#14161c" fill-opacity="0.46"/><path d="M16 16 L29 16 L18.57 13.43Z M16 16 L16 29 L13.43 18.57Z" fill="#14161c" fill-opacity="0.19"/><path d="M25.14 3.72 L25.98 6.37 L28.64 7.22 L25.98 8.06 L25.14 10.72 L24.29 8.06 L21.64 7.22 L24.29 6.37Z" fill="url(#chromeSpark)"/><path d="M25.14 7.22 L25.14 3.72 L24.29 6.37Z M25.14 7.22 L21.64 7.22 L24.29 6.37Z" fill="#fff" fill-opacity="0.46"/><path d="M25.14 7.22 L25.14 3.72 L25.98 6.37Z M25.14 7.22 L21.64 7.22 L24.29 8.06Z" fill="#fff" fill-opacity="0.19"/><path d="M25.14 7.22 L28.64 7.22 L25.98 8.06Z M25.14 7.22 L25.14 10.72 L25.98 8.06Z" fill="#14161c" fill-opacity="0.46"/><path d="M25.14 7.22 L28.64 7.22 L25.98 6.37Z M25.14 7.22 L25.14 10.72 L24.29 8.06Z" fill="#14161c" fill-opacity="0.19"/></svg><span>Vega</span></a>
+    <button class="menu" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Main"><a href="index.html" aria-current="page">Home</a><a href="features.html">Features</a><a href="features.html#privacy">Privacy</a><a href="legal.html">Legal</a><a class="cta" href="download.html">Download</a></nav>
+  </div>
+</header>
+<main id="main">
+
+<section class="hero" aria-labelledby="hero-title">
+  <canvas id="sky" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="hero-star"><svg viewBox="-1.25 -1.25 2.5 2.5" aria-hidden="true" focusable="false"><defs><linearGradient id="heroChromeA" gradientUnits="userSpaceOnUse" x1="-0.3000" y1="-1.0000" x2="0.3000" y2="1.0000"><stop offset="0" stop-color="#fff"/><stop offset="0.4" stop-color="#d6deea"/><stop offset="0.5" stop-color="#242830"/><stop offset="0.55" stop-color="#808896"/><stop offset="0.8" stop-color="#e2e6ee"/><stop offset="1" stop-color="#fff"/></linearGradient><linearGradient id="heroChromeB" gradientUnits="userSpaceOnUse" x1="0.6297" y1="-0.9189" x2="0.7757" y2="-0.4324"><stop offset="0" stop-color="#fff"/><stop offset="0.4" stop-color="#d6deea"/><stop offset="0.5" stop-color="#242830"/><stop offset="0.55" stop-color="#808896"/><stop offset="0.8" stop-color="#e2e6ee"/><stop offset="1" stop-color="#fff"/></linearGradient></defs><path d="M0.0000 0.0000 L0.0000 -1.0000 L-0.1980 -0.1980Z" fill="url(#heroChromeA)"/><path d="M0.0000 0.0000 L0.0000 -1.0000 L-0.1980 -0.1980Z" fill="#fff" fill-opacity="0.462"/><path d="M0.0000 0.0000 L0.0000 -1.0000 L0.1980 -0.1980Z" fill="url(#heroChromeA)"/><path d="M0.0000 0.0000 L0.0000 -1.0000 L0.1980 -0.1980Z" fill="#fff" fill-opacity="0.191"/><path d="M0.0000 0.0000 L1.0000 0.0000 L0.1980 -0.1980Z" fill="url(#heroChromeA)"/><path d="M0.0000 0.0000 L1.0000 0.0000 L0.1980 -0.1980Z" fill="#14161c" fill-opacity="0.191"/><path d="M0.0000 0.0000 L1.0000 0.0000 L0.1980 0.1980Z" fill="url(#heroChromeA)"/><path d="M0.0000 0.0000 L1.0000 0.0000 L0.1980 0.1980Z" fill="#14161c" fill-opacity="0.462"/><path d="M0.0000 0.0000 L0.0000 1.0000 L0.1980 0.1980Z" fill="url(#heroChromeA)"/><path d="M0.0000 0.0000 L0.0000 1.0000 L0.1980 0.1980Z" fill="#14161c" fill-opacity="0.462"/><path d="M0.0000 0.0000 L0.0000 1.0000 L-0.1980 0.1980Z" fill="url(#heroChromeA)"/><path d="M0.0000 0.0000 L0.0000 1.0000 L-0.1980 0.1980Z" fill="#14161c" fill-opacity="0.191"/><path d="M0.0000 0.0000 L-1.0000 0.0000 L-0.1980 0.1980Z" fill="url(#heroChromeA)"/><path d="M0.0000 0.0000 L-1.0000 0.0000 L-0.1980 0.1980Z" fill="#fff" fill-opacity="0.191"/><path d="M0.0000 0.0000 L-1.0000 0.0000 L-0.1980 -0.1980Z" fill="url(#heroChromeA)"/><path d="M0.0000 0.0000 L-1.0000 0.0000 L-0.1980 -0.1980Z" fill="#fff" fill-opacity="0.462"/><path d="M0.7027 -0.6757 L0.7027 -0.9189 L0.6442 -0.7342Z" fill="url(#heroChromeB)"/><path d="M0.7027 -0.6757 L0.7027 -0.9189 L0.6442 -0.7342Z" fill="#fff" fill-opacity="0.462"/><path d="M0.7027 -0.6757 L0.7027 -0.9189 L0.7612 -0.7342Z" fill="url(#heroChromeB)"/><path d="M0.7027 -0.6757 L0.7027 -0.9189 L0.7612 -0.7342Z" fill="#fff" fill-opacity="0.191"/><path d="M0.7027 -0.6757 L0.9459 -0.6757 L0.7612 -0.7342Z" fill="url(#heroChromeB)"/><path d="M0.7027 -0.6757 L0.9459 -0.6757 L0.7612 -0.7342Z" fill="#14161c" fill-opacity="0.191"/><path d="M0.7027 -0.6757 L0.9459 -0.6757 L0.7612 -0.6172Z" fill="url(#heroChromeB)"/><path d="M0.7027 -0.6757 L0.9459 -0.6757 L0.7612 -0.6172Z" fill="#14161c" fill-opacity="0.462"/><path d="M0.7027 -0.6757 L0.7027 -0.4324 L0.7612 -0.6172Z" fill="url(#heroChromeB)"/><path d="M0.7027 -0.6757 L0.7027 -0.4324 L0.7612 -0.6172Z" fill="#14161c" fill-opacity="0.462"/><path d="M0.7027 -0.6757 L0.7027 -0.4324 L0.6442 -0.6172Z" fill="url(#heroChromeB)"/><path d="M0.7027 -0.6757 L0.7027 -0.4324 L0.6442 -0.6172Z" fill="#14161c" fill-opacity="0.191"/><path d="M0.7027 -0.6757 L0.4595 -0.6757 L0.6442 -0.6172Z" fill="url(#heroChromeB)"/><path d="M0.7027 -0.6757 L0.4595 -0.6757 L0.6442 -0.6172Z" fill="#fff" fill-opacity="0.191"/><path d="M0.7027 -0.6757 L0.4595 -0.6757 L0.6442 -0.7342Z" fill="url(#heroChromeB)"/><path d="M0.7027 -0.6757 L0.4595 -0.6757 L0.6442 -0.7342Z" fill="#fff" fill-opacity="0.462"/></svg></div>
+    <h1 id="hero-title" aria-label="Vega"><span>V</span><span>E</span><span>G</span><span>A</span></h1>
+    <p class="tagline">Your <span class="typed" data-words="meta scout|deck doctor|market watch|game log|pack sorter|trade post">meta scout</span><span class="cursor" aria-hidden="true"></span></p>
+    <p class="lede"><b>Vega Lite</b>: a free, local analyzer for the <b>ONE PIECE Card Game</b>. Meta, decks, collection, prices
+      and your own games, on your PC and your phone. No account. No tracking.</p>
+    <div class="btns">
+      <a class="btn primary" href="download.html" data-dl-auto><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 3v12M6 10l6 6 6-6M4 21h16"/></svg><span data-dl-auto-label>Download free</span></a>
+      <a class="btn ghost" href="#tour">See what it does</a>
+    </div>
+    <p class="fine">Windows &amp; Android · version <span data-version>0.1.0</span> · unofficial fan project</p>
+  </div>
+  <div class="scrollhint" aria-hidden="true">Scroll<i></i></div>
+</section>
+
+<section class="band" style="padding-top:20px" aria-label="Vega on PC and phone">
+  <div class="wrap">
+    <div class="duo zoom">
+      <div class="device laptop"><span class="title">Vega · Dashboard</span>
+        <div class="screen"><img src="assets/shots/d-home.webp" width="1600" height="1108" alt="Vega's dashboard on Windows: what your deck still needs, cards at your target price and today's deals"></div>
+      </div>
+      <div class="device phone para" data-speed="0.18">
+        <div class="screen"><img src="assets/shots/p-home.webp" width="780" height="1688" alt="The same dashboard in the Android app"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" aria-label="What Vega is for">
+  <div class="wrap">
+    <p class="statement">Know the <span class="or">meta.</span> Build the <span class="or">deck.</span> Buy at the <span class="hl">right price.</span> Learn from <span class="hl">every game.</span></p>
+    <div class="counters">
+      <div class="stat rv"><b data-count="1">1</b><span>card game, in depth: ONE PIECE</span></div>
+      <div class="stat rv d1"><b data-count="0">0</b><span>accounts to create</span></div>
+      <div class="stat rv d2"><b data-count="0">0</b><span>trackers, ads or analytics</span></div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule grow">
+
+<section class="band tour" id="tour" aria-labelledby="tour-title">
+  <div class="wrap">
+    <p class="kicker rv">The tour</p>
+    <h2 id="tour-title" class="rv">Everything for your next tournament, in one place</h2>
+    <div class="tour-grid">
+      <div class="tour-steps">
+        <article class="step" data-shot="meta">
+          <h3>Read the field</h3>
+          <p>Every leader's meta share, its <b>match win rate</b> from real tournament pairings, top-8 finishes and a matchup heatmap.
+            Going first or second per leader, and how often the first player wins.</p>
+          <ul><li>Filter by time window and event size</li><li>Average lists split into core, flex and tech cards</li><li>Copy any list into your decks in one click</li></ul>
+          <a class="more" href="features.html#meta">Meta &amp; matchups →</a>
+          <div class="tour-mobileshot device laptop"><div class="screen"><img loading="lazy" src="assets/shots/d-meta.webp" width="1600" height="1108" alt="The Meta page: meta share donut, popularity against win rate"></div></div>
+        </article>
+        <article class="step" data-shot="play">
+          <h3>Play board &amp; coach</h3>
+          <p>Your active deck against the field: your record going 1st and 2nd, every opponent you're likely to meet and how your
+            leader does against it. Tap an opponent for the matchup and the tech cards winners play there.</p>
+          <a class="more" href="features.html#meta">Play board →</a>
+          <div class="tour-mobileshot device laptop"><div class="screen"><img loading="lazy" src="assets/shots/d-play.webp" width="1600" height="1108" alt="The Play board with your games, other players' stats and likely opponents"></div></div>
+        </article>
+        <article class="step" data-shot="deck">
+          <h3>Decks that check themselves</h3>
+          <p>Build or paste a list. Vega checks the deck rules, shows the cost curve and counters, compares it with tournament lists
+            and tells you what your collection is still missing, priced with shipping.</p>
+          <a class="more" href="features.html#decks">Decks &amp; collection →</a>
+          <div class="tour-mobileshot device laptop"><div class="screen"><img loading="lazy" src="assets/shots/d-deck.webp" width="1600" height="1108" alt="A deck in Vega with counters, curve and the cost to complete it"></div></div>
+        </article>
+        <article class="step" data-shot="market">
+          <h3>Buy at the right moment</h3>
+          <p>One watch list. Every card as a bounty poster with the cheapest offer, trend and a <b class="hl">Buy</b> /
+            Watch / <b class="or">Rising</b> verdict, plus a shopping plan: single orders or one bundle?</p>
+          <a class="more" href="features.html#market">Market watch →</a>
+          <div class="tour-mobileshot device laptop"><div class="screen"><img loading="lazy" src="assets/shots/d-market.webp" width="1600" height="1108" alt="Market watch with the shopping plan"></div></div>
+        </article>
+        <article class="step" data-shot="pulls">
+          <h3>Sort your pack pulls</h3>
+          <p>Opened a booster? Every card of the set by how much tournament lists play it and what it's worth: keep, playable,
+            value or bulk. One tap adds a pull to your collection.</p>
+          <a class="more" href="features.html#pulls">Pack pulls →</a>
+          <div class="tour-mobileshot device laptop"><div class="screen"><img loading="lazy" src="assets/shots/d-pulls.webp" width="1600" height="1108" alt="Pack pulls: the cards of a set with keep, playable, value and bulk"></div></div>
+        </article>
+        <article class="step" data-shot="curve">
+          <h3>Learn from every game</h3>
+          <p>Log a game in three taps or import your OPTCGSim games automatically. Vega shows your win rate going first and second,
+            your matchups, and turn by turn whether you played on curve.</p>
+          <a class="more" href="features.html#games">Game log &amp; analysis →</a>
+          <div class="tour-mobileshot device laptop"><div class="screen"><img loading="lazy" src="assets/shots/d-curve.webp" width="1600" height="1108" alt="Play analysis: DON!! spent per turn against the curve"></div></div>
+        </article>
+      </div>
+      <div class="tour-stage" aria-hidden="true">
+        <div class="device laptop"><span class="title">Vega</span>
+          <div class="screen">
+            <img class="layer" data-shot="meta" src="assets/shots/d-meta.webp" alt="" width="1600" height="1108">
+            <img class="layer" data-shot="play" src="assets/shots/d-play.webp" alt="" width="1600" height="1108">
+            <img class="layer" data-shot="deck" src="assets/shots/d-deck.webp" alt="" width="1600" height="1108">
+            <img class="layer" data-shot="market" src="assets/shots/d-market.webp" alt="" width="1600" height="1108">
+            <img class="layer" data-shot="pulls" src="assets/shots/d-pulls.webp" alt="" width="1600" height="1108">
+            <img class="layer" data-shot="curve" src="assets/shots/d-curve.webp" alt="" width="1600" height="1108">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule grow">
+
+<section class="band" aria-labelledby="locals-title">
+  <div class="wrap feature-grid">
+    <div class="feature-text">
+      <p class="kicker rv">New · Locals</p>
+      <h2 id="locals-title" class="rv">Trade at your local game store</h2>
+      <p class="lede rv">See who at your local offers the cards on your watch list, and who looks for your spare copies. Chat, say
+        when you'll come, check in with the store's code of the day. Vega even suggests fair trades, with a small top-up you pay
+        in person.</p>
+      <p class="muted rv small">You meet at the store: nothing is paid or binding in Vega, and Vega takes no fee.</p>
+      <a class="btn rv" href="features.html#locals">How Locals works</a>
+    </div>
+    <div class="mock rv pop" aria-label="Illustration of a trade suggestion in Locals (not real data)">
+      <div class="mock-head"><b>Your local game store</b><span class="tag g">3 players today</span></div>
+      <h4>Trades you could make</h4>
+      <div class="trade">
+        <div class="side"><span class="mock-card" style="--c1:#2F2F2F"></span><span class="mock-card" style="--c1:#E2C33B"></span></div>
+        <div class="arrow">⇄</div>
+        <div class="side" style="justify-content:flex-end"><span class="mock-card" style="--c1:#3FA36A"></span><span class="mock-card" style="--c1:#3E86D1"></span><span class="mock-card" style="--c1:#3E86D1"></span></div>
+        <p class="sum">You give 18.67 € · you get 19.90 € · <b>top-up 1.23 €</b> paid in person</p>
+      </div>
+      <h4>Offers you look for</h4>
+      <div class="mock-row"><span class="mock-card" style="--c1:#3FA36A"></span><div>Card on your watch list<div class="who">Alex · NM · EN · on your list</div></div><div class="price">6,50 €</div></div>
+      <div class="mock-row"><span class="mock-card" style="--c1:#8B5BC7"></span><div>Another one you want<div class="who">Sam · 3× · trade only</div></div><div class="price">trade</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="band center" aria-labelledby="sync-title">
+  <div class="wrap">
+    <p class="kicker rv">Phone ↔ PC</p>
+    <h2 id="sync-title" class="rv">Your PC and your phone, in sync</h2>
+    <p class="lede rv">Decks, games, watch list and collection stay the same on both. Each device works on its own, offline too, and
+      they swap changes over your Wi-Fi. Pair once with a short code or a QR code. No cloud in between.</p>
+    <div class="sync rv">
+      <div class="node"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="4" width="20" height="13"/><path d="M8 21h8M12 17v4"/></svg><b>PC</b><span>Windows app</span></div>
+      <div class="wire" aria-hidden="true"><em>Wi-Fi · K7Q-4TZ</em><i></i><i></i></div>
+      <div class="node"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg><b>Phone</b><span>Android app</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" aria-labelledby="priv-title">
+  <div class="wrap">
+    <p class="kicker rv">Privacy</p>
+    <h2 id="priv-title" class="rv">Local first. Yours only.</h2>
+    <p class="lede rv">Vega runs on your devices. Your collection, decks and games never leave them, except to your own paired phone or PC.</p>
+    <div class="pgrid">
+      <div class="pitem rv"><b>No account</b><span>Install and go. Nothing to sign up for.</span></div>
+      <div class="pitem rv d1"><b>No tracking</b><span>No analytics, no ads, not in the app and not on this website.</span></div>
+      <div class="pitem rv d2"><b>Offline</b><span>Everything is stored locally; data sources are fetched on your device for you.</span></div>
+      <div class="pitem rv d3"><b>Free</b><span>No price, no fees, no in-app purchases. A fan project.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" aria-labelledby="all-title">
+  <div class="wrap">
+    <p class="kicker rv">All features</p>
+    <h2 id="all-title" class="rv">Pick a deep dive</h2>
+    <div class="cards">
+      <a class="fcard rv" href="features.html#meta"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><h3>Meta &amp; matchups</h3><p>Meta share, win rates, matchups, going first or second, the play board and coach.</p></a>
+      <a class="fcard rv d1" href="features.html#decks"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="7" y="3" width="13" height="17"/><path d="M4 6v15h12"/></svg><h3>Decks &amp; collection</h3><p>Deck rules, curves, what's missing, a collection shared by all decks.</p></a>
+      <a class="fcard rv d2" href="features.html#market"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 12l9-9h9v9l-9 9z"/><circle cx="16" cy="8" r="1.5"/></svg><h3>Market watch</h3><p>One watch list across games, buy signals, a shopping plan with shipping.</p></a>
+      <a class="fcard rv" href="features.html#pulls"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8h14v13H5zM8 8V4h8v4"/></svg><h3>Pack pulls</h3><p>What to keep from a booster, by play rate and price.</p></a>
+      <a class="fcard rv d1" href="features.html#games"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg><h3>Game log &amp; analysis</h3><p>Three-tap logging, OPTCGSim import, curve, 1st vs 2nd, dice roll.</p></a>
+      <a class="fcard rv d2" href="features.html#locals"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 10l2-6h14l2 6M4 10v10h16V10M9 20v-6h6v6"/></svg><h3>Locals</h3><p>A local card market: offers, wishes, chat, check-in and fair trades.</p></a>
+      <a class="fcard rv d1" href="features.html#sync"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 12a8 8 0 0114-5l2-2v6h-6l2-2a5 5 0 00-9 3M20 12a8 8 0 01-14 5l-2 2v-6h6l-2 2a5 5 0 009-3"/></svg><h3>Phone ↔ PC</h3><p>Pair once, sync over Wi-Fi. Each device works offline.</p></a>
+      <a class="fcard rv d2" href="features.html#privacy"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="11" width="14" height="10"/><path d="M8 11V7a4 4 0 018 0v4"/></svg><h3>Privacy</h3><p>Local-first, no account, no tracking.</p></a>
+    </div>
+  </div>
+</section>
+
+<section class="band center" aria-labelledby="dl-title">
+  <div class="wrap">
+    <div class="hero-star rv pop" style="width:110px;margin-bottom:20px;transform:none;opacity:1"><svg viewBox="-1.25 -1.25 2.5 2.5" aria-hidden="true" focusable="false"><defs><linearGradient id="heroChromeA" gradientUnits="userSpaceOnUse" x1="-0.3000" y1="-1.0000" x2="0.3000" y2="1.0000"><stop offset="0" stop-color="#fff"/><stop offset="0.4" stop-color="#d6deea"/><stop offset="0.5" stop-color="#242830"/><stop offset="0.55" stop-color="#808896"/><stop offset="0.8" stop-color="#e2e6ee"/><stop offset="1" stop-color="#fff"/></linearGradient><linearGradient id="heroChromeB" gradientUnits="userSpaceOnUse" x1="0.6297" y1="-0.9189" x2="0.7757" y2="-0.4324"><stop offset="0" stop-color="#fff"/><stop offset="0.4" stop-color="#d6deea"/><stop offset="0.5" stop-color="#242830"/><stop offset="0.55" stop-color="#808896"/><stop offset="0.8" stop-color="#e2e6ee"/><stop offset="1" stop-color="#fff"/></linearGradient></defs><path d="M0.0000 0.0000 L0.0000 -1.0000 L-0.1980 -0.1980Z" fill="url(#heroChromeA)"/><path d="M0.0000 0.0000 L0.0000 -1.0000 L-0.1980 -0.1980Z" fill="#fff" fill-opacity="0.462"/><path d="M0.0000 0.0000 L0.0000 -1.0000 L0.1980 -0.1980Z" fill="url(#heroChromeA)"/><path d="M0.0000 0.0000 L0.0000 -1.0000 L0.1980 -0.1980Z" fill="#fff" fill-opacity="0.191"/><path d="M0.0000 0.0000 L1.0000 0.0000 L0.1980 -0.1980Z" fill="url(#heroChromeA)"/><path d="M0.0000 0.0000 L1.0000 0.0000 L0.1980 -0.1980Z" fill="#14161c" fill-opacity="0.191"/><path d="M0.0000 0.0000 L1.0000 0.0000 L0.1980 0.1980Z" fill="url(#heroChromeA)"/><path d="M0.0000 0.0000 L1.0000 0.0000 L0.1980 0.1980Z" fill="#14161c" fill-opacity="0.462"/><path d="M0.0000 0.0000 L0.0000 1.0000 L0.1980 0.1980Z" fill="url(#heroChromeA)"/><path d="M0.0000 0.0000 L0.0000 1.0000 L0.1980 0.1980Z" fill="#14161c" fill-opacity="0.462"/><path d="M0.0000 0.0000 L0.0000 1.0000 L-0.1980 0.1980Z" fill="url(#heroChromeA)"/><path d="M0.0000 0.0000 L0.0000 1.0000 L-0.1980 0.1980Z" fill="#14161c" fill-opacity="0.191"/><path d="M0.0000 0.0000 L-1.0000 0.0000 L-0.1980 0.1980Z" fill="url(#heroChromeA)"/><path d="M0.0000 0.0000 L-1.0000 0.0000 L-0.1980 0.1980Z" fill="#fff" fill-opacity="0.191"/><path d="M0.0000 0.0000 L-1.0000 0.0000 L-0.1980 -0.1980Z" fill="url(#heroChromeA)"/><path d="M0.0000 0.0000 L-1.0000 0.0000 L-0.1980 -0.1980Z" fill="#fff" fill-opacity="0.462"/><path d="M0.7027 -0.6757 L0.7027 -0.9189 L0.6442 -0.7342Z" fill="url(#heroChromeB)"/><path d="M0.7027 -0.6757 L0.7027 -0.9189 L0.6442 -0.7342Z" fill="#fff" fill-opacity="0.462"/><path d="M0.7027 -0.6757 L0.7027 -0.9189 L0.7612 -0.7342Z" fill="url(#heroChromeB)"/><path d="M0.7027 -0.6757 L0.7027 -0.9189 L0.7612 -0.7342Z" fill="#fff" fill-opacity="0.191"/><path d="M0.7027 -0.6757 L0.9459 -0.6757 L0.7612 -0.7342Z" fill="url(#heroChromeB)"/><path d="M0.7027 -0.6757 L0.9459 -0.6757 L0.7612 -0.7342Z" fill="#14161c" fill-opacity="0.191"/><path d="M0.7027 -0.6757 L0.9459 -0.6757 L0.7612 -0.6172Z" fill="url(#heroChromeB)"/><path d="M0.7027 -0.6757 L0.9459 -0.6757 L0.7612 -0.6172Z" fill="#14161c" fill-opacity="0.462"/><path d="M0.7027 -0.6757 L0.7027 -0.4324 L0.7612 -0.6172Z" fill="url(#heroChromeB)"/><path d="M0.7027 -0.6757 L0.7027 -0.4324 L0.7612 -0.6172Z" fill="#14161c" fill-opacity="0.462"/><path d="M0.7027 -0.6757 L0.7027 -0.4324 L0.6442 -0.6172Z" fill="url(#heroChromeB)"/><path d="M0.7027 -0.6757 L0.7027 -0.4324 L0.6442 -0.6172Z" fill="#14161c" fill-opacity="0.191"/><path d="M0.7027 -0.6757 L0.4595 -0.6757 L0.6442 -0.6172Z" fill="url(#heroChromeB)"/><path d="M0.7027 -0.6757 L0.4595 -0.6757 L0.6442 -0.6172Z" fill="#fff" fill-opacity="0.191"/><path d="M0.7027 -0.6757 L0.4595 -0.6757 L0.6442 -0.7342Z" fill="url(#heroChromeB)"/><path d="M0.7027 -0.6757 L0.4595 -0.6757 L0.6442 -0.7342Z" fill="#fff" fill-opacity="0.462"/></svg></div>
+    <h2 id="dl-title" class="rv">Ready to set sail?</h2>
+    <p class="lede rv">Free for Windows and Android. Version <span data-version>0.1.0</span>.</p>
+    <div class="btns rv" style="justify-content:center">
+      <a class="btn primary" href="download.html#windows"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 5l7-1v7H3zM11 4l10-1.5V11H11zM3 12h7v7l-7-1zM11 12h10v8.5L11 19z"/></svg>Windows <small data-dl-size="lite-windows">24 MB</small></a>
+      <a class="btn primary" href="download.html#android"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg>Android <small data-dl-size="lite-android">23 MB</small></a>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="index.html" aria-label="Vega home"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><defs><linearGradient id="chrome" gradientUnits="userSpaceOnUse" x1="12.1" y1="3" x2="19.9" y2="29"><stop offset="0" stop-color="#fff"/><stop offset=".4" stop-color="#d6deea"/><stop offset=".5" stop-color="#242830"/><stop offset=".55" stop-color="#808896"/><stop offset=".8" stop-color="#e2e6ee"/><stop offset="1" stop-color="#fff"/></linearGradient><linearGradient id="chromeSpark" gradientUnits="userSpaceOnUse" x1="24.09" y1="3.72" x2="26.19" y2="10.72"><stop offset="0" stop-color="#fff"/><stop offset=".4" stop-color="#d6deea"/><stop offset=".5" stop-color="#242830"/><stop offset=".55" stop-color="#808896"/><stop offset=".8" stop-color="#e2e6ee"/><stop offset="1" stop-color="#fff"/></linearGradient></defs><path d="M16 3 L18.57 13.43 L29 16 L18.57 18.57 L16 29 L13.43 18.57 L3 16 L13.43 13.43Z" fill="url(#chrome)" stroke="#5c687a" stroke-width=".4" stroke-linejoin="round"/><path d="M16 16 L16 3 L13.43 13.43Z M16 16 L3 16 L13.43 13.43Z" fill="#fff" fill-opacity="0.46"/><path d="M16 16 L16 3 L18.57 13.43Z M16 16 L3 16 L13.43 18.57Z" fill="#fff" fill-opacity="0.19"/><path d="M16 16 L29 16 L18.57 18.57Z M16 16 L16 29 L18.57 18.57Z" fill="#14161c" fill-opacity="0.46"/><path d="M16 16 L29 16 L18.57 13.43Z M16 16 L16 29 L13.43 18.57Z" fill="#14161c" fill-opacity="0.19"/><path d="M25.14 3.72 L25.98 6.37 L28.64 7.22 L25.98 8.06 L25.14 10.72 L24.29 8.06 L21.64 7.22 L24.29 6.37Z" fill="url(#chromeSpark)"/><path d="M25.14 7.22 L25.14 3.72 L24.29 6.37Z M25.14 7.22 L21.64 7.22 L24.29 6.37Z" fill="#fff" fill-opacity="0.46"/><path d="M25.14 7.22 L25.14 3.72 L25.98 6.37Z M25.14 7.22 L21.64 7.22 L24.29 8.06Z" fill="#fff" fill-opacity="0.19"/><path d="M25.14 7.22 L28.64 7.22 L25.98 8.06Z M25.14 7.22 L25.14 10.72 L25.98 8.06Z" fill="#14161c" fill-opacity="0.46"/><path d="M25.14 7.22 L28.64 7.22 L25.98 6.37Z M25.14 7.22 L25.14 10.72 L24.29 8.06Z" fill="#14161c" fill-opacity="0.19"/></svg><span>Vega</span></a>
+        <p>Vega Lite: a free, local, unofficial analyzer for the ONE PIECE Card Game. Windows and Android.
+        Version <span data-version>0.1.0</span>.</p>
+      </div>
+      <div>
+        <h4>Vega</h4>
+        <ul>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="download.html">Download</a></li>
+          <li><a href="features.html#privacy">Privacy</a></li>
+          <li><a href="#" data-repo>Source code</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Info</h4>
+        <ul>
+          <li><a href="legal.html">Legal &amp; data sources</a></li>
+          <li><a href="legal.html#license">License</a></li>
+          <li><a href="#" data-issues>Report a problem</a></li>
+          <li><a href="#" data-releases>All releases</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="disclaimer">Vega is a free, unofficial fan-made tool for the ONE PIECE Card Game. It is not affiliated with,
+    endorsed, sponsored or approved by Bandai, Toei Animation, Shueisha or Eiichiro Oda.
+    ONE PIECE &copy; Eiichiro Oda/Shueisha, Toei Animation. The ONE PIECE CARD GAME &copy; Bandai.
+    Card images in the screenshots belong to their owners. This website uses no cookies, no analytics and no trackers.</p>
+  </div>
+</footer>
+<script src="assets/downloads.js?v=6"></script>
+<script src="assets/site.js?v=6"></script>
+</body>
+</html>

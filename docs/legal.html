@@ -84,7 +84,7 @@
 
     <h3 id="privacy-app">The app</h3>
     <ul>
-      <li><b>On your devices only:</b> your collection, decks, watch list and settings are stored in the app on your PC or phone. There is
+      <li><b>On your devices only:</b> your collection, decks, games, watch list and settings are stored in the app on your PC or phone. There is
         no Vega server that receives them, and the maintainer never sees them. Uninstalling the app (on Windows also deleting its
         data folder) removes them.</li>
       <li><b>Phone and PC:</b> if you pair them, they exchange your data directly over your own network. Nothing goes through a
@@ -96,6 +96,10 @@
       <li><b>Deck coach (optional):</b> only when you ask it with your own Anthropic API key, the app sends that deck, its card texts
         and the statistics for the request to Anthropic (Claude), under your own account and Anthropic's terms. The key stays on
         that device. Without a key the coach only gives you a prompt to copy; then nothing is sent by the app.</li>
+      <li><b>Scanning a QR code</b> (the phone app, to check in at a local): the app opens Google's code scanner, a part of
+        Google Play services on your phone. The app has no camera permission and gets only the text of the code.</li>
+      <li><b>Dice:</b> the Dice page reads the phone's motion sensor to notice a shake, only while that page is open. Nothing of it is
+        stored or sent.</li>
       <li><b>No telemetry:</b> the app doesn't report usage, errors or anything else to anyone.</li>
     </ul>
 

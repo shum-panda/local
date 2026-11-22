@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Features · Vega Lite</title>
-<meta name="description" content="What Vega Lite does: Locals (the card market of your local game store), your collection, decks and the deck coach, market watch, phone and PC sync, privacy – and what is coming.">
+<meta name="description" content="What Vega Lite does: Locals (the card market of your local game store), your collection, decks and the deck coach, a game log, market watch, phone and PC sync, privacy – and what is coming.">
 <meta name="theme-color" content="#15120C">
 <meta name="referrer" content="no-referrer">
 <meta property="og:title" content="Features · Vega">
-<meta property="og:description" content="What Vega Lite does: Locals (the card market of your local game store), your collection, decks and the deck coach, market watch, phone and PC sync, privacy – and what is coming.">
+<meta property="og:description" content="What Vega Lite does: Locals (the card market of your local game store), your collection, decks and the deck coach, a game log, market watch, phone and PC sync, privacy – and what is coming.">
 <meta property="og:image" content="assets/img/vega-512.png">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/img/vega-32.png">
 <link rel="apple-touch-icon" href="assets/img/vega-192.png">
@@ -33,7 +33,7 @@
     <p class="lede rv">Your collection, the cards you look for and the players of your local game store, put together: what you have, what
       it is worth, what to buy and who to trade with. More is on the way.</p>
     <nav class="toc rv" aria-label="On this page">
-      <a href="#locals">Locals</a><a href="#collection">Collection</a><a href="#decks">Decks &amp; coach</a><a href="#market">Market watch</a>
+      <a href="#locals">Locals</a><a href="#collection">Collection</a><a href="#decks">Decks &amp; coach</a><a href="#log">Game log &amp; dice</a><a href="#market">Market watch</a>
       <a href="#sync">Phone ↔ PC</a><a href="#privacy">Privacy</a><a href="#soon">Coming soon</a>
     </nav>
   </div>
@@ -51,7 +51,7 @@
           <li><b>Offers:</b> spare copies with a price or for trade only, each version of a card on its own; mark one <i>reserved</i> once someone takes it, <i>gone</i> when it is sold (it then leaves your collection).</li>
           <li><b>Spare copies by themselves:</b> if you like, Vega offers what you own beyond a playset at Cardmarket's trend price and keeps it up to date.</li>
           <li><b>Chat:</b> write in Vega (or by the contact ways you share), say when you'll come, block or report if needed.</li>
-          <li><b>Check-in:</b> with the store's code or its QR code. A store can show the lists only to players who are there.</li>
+          <li><b>Check-in:</b> with the store's code, or scan its QR code in the phone app. A store can show the lists only to players who are there.</li>
           <li><b>Trade suggestions:</b> cards each of you looks for, as even in value as possible, with a small <b>top-up paid in person</b> (your limit: 10 % of the value, at least 5 €, adjustable). After the swap, Vega offers to update your collection.</li>
         </ul>
         <p class="note rv"><b>You meet at the store.</b> Nothing is paid or binding in Vega, Vega takes no fee and moves no money.
@@ -135,6 +135,25 @@
   </div>
 </section>
 
+<section class="feature" id="log" aria-labelledby="log-h">
+  <div class="wrap feature-grid">
+    <div class="feature-text">
+      <p class="kicker rv">At the table</p>
+      <h2 id="log-h" class="rv">Game log &amp; dice</h2>
+      <p class="lede rv">Log a game in three taps, and roll for who goes first.</p>
+      <ul class="rv">
+        <li><b>Quick log:</b> deck, opponent, won or lost, first or second. On the phone it is one tap away from every page.</li>
+        <li><b>Your record:</b> every deck shows its win rate and its games, by opponent and by going first or second.</li>
+        <li><b>OPTCGSim:</b> Vega can import your games from the combat logs the sim writes on your computer.</li>
+        <li><b>Dice:</b> shake your phone to roll two dice, or tap Roll.</li>
+      </ul>
+    </div>
+    <div class="feature-media">
+      <figure class="rv"><div class="device phone" style="margin:0 auto"><div class="screen"><img loading="lazy" src="assets/shots/p-log.webp" width="780" height="1688" alt="Logging a game on the phone, with the dice roll for turn order"></div></div><figcaption style="text-align:center">Logging a game on the phone</figcaption></figure>
+    </div>
+  </div>
+</section>
+
 <section class="feature" id="market" aria-labelledby="market-h">
   <div class="wrap feature-grid">
     <div class="feature-text">
@@ -162,7 +181,7 @@
     <div class="feature-text">
       <p class="kicker rv">Two devices, one Vega</p>
       <h2 id="sync-h" class="rv">Phone ↔ PC sync</h2>
-      <p class="lede rv">Your collection, decks, market watch and a few settings stay the same on the Android app and the PC.</p>
+      <p class="lede rv">Your collection, decks, games, market watch and a few settings stay the same on the Android app and the PC.</p>
       <ul class="rv">
         <li><b>Each device works on its own,</b> offline too. The phone swaps changes with the PC when it can reach it: every 5 minutes and on <i>Sync now</i>.</li>
         <li><b>Pair once:</b> turn on <i>Phone sync</i> on the PC, then <i>Find my PC</i> on the phone and enter the short code, or scan the QR code.</li>
@@ -185,7 +204,7 @@
   <div class="wrap">
     <p class="kicker rv">Privacy</p>
     <h2 id="priv-h" class="rv">Local first. No tracking.</h2>
-    <p class="lede rv">Everything you enter (collection, decks, watch list, settings) is stored only on your devices, and synced only between
+    <p class="lede rv">Everything you enter (collection, decks, games, watch list, settings) is stored only on your devices, and synced only between
       your own phone and PC if you pair them. At a local you join, the other players see what you offer and look for.</p>
     <div class="pgrid">
       <div class="pitem rv"><b>No sign-up to start</b><span>Vega starts empty and fetches public card data for you. Only Locals asks for a name.</span></div>
@@ -231,10 +250,9 @@
   <div class="wrap feature-grid">
     <div class="feature-text">
       <p class="kicker rv">Coming soon</p>
-      <h2 id="games-h" class="rv">Game log &amp; play analysis</h2>
-      <p class="lede rv">Log a game in three taps, or let Vega import your OPTCGSim games from the sim's combat logs.</p>
+      <h2 id="games-h" class="rv">Play analysis</h2>
+      <p class="lede rv">What the games you log tell you: where you win, where you lose, and what you could have played.</p>
       <ul class="rv">
-        <li><b>Quick log:</b> deck, opponent, won or lost, first or second. A <b>dice roll</b> for the turn order is built in.</li>
         <li><b>Performance:</b> win rate, going first vs second, streak and form, win rate over time, your matchups next to tournament numbers.</li>
         <li><b>Playing on curve:</b> for every sim game, each turn's DON!!, what you spent and what your hand could have played. Missed plays are flagged.</li>
         <li><b>Reference curves</b> from top-8 lists and winning sim games, per leader.</li>

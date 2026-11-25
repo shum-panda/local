@@ -2,8 +2,8 @@
 // The site reads this on every page (download buttons, sizes, version). Point the URLs at the GitHub release assets;
 // "latest/download/<file>" always serves the newest release that carries a file with exactly that name.
 window.VEGA_DOWNLOADS = {
-  version: "0.1.0",
-  released: "2026-11",                                   // shown as "Version 0.1.0 · November 2026"
+  version: "0.1.1",
+  released: "2026-11",                                   // shown as "Version 0.1.1 · November 2026"
   repo: "https://github.com/shum-panda/local",
   releases: "https://github.com/shum-panda/local/releases",
   issues: "https://github.com/shum-panda/local/issues",
